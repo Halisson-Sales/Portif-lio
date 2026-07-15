@@ -1,294 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HallDev-Portifólio</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Halisson Eduardo | Desenvolvedor Full Stack (Python, FastAPI, Next.js)</title>
+  <meta name="description" content="Desenvolvedor full stack com SaaS próprio em produção. Python, FastAPI, Next.js, PostgreSQL, Docker e automações com IA." />
+  <link rel="icon" type="image/png" href="assets/mark.png" />
 
+  <meta property="og:title" content="Halisson Eduardo | Desenvolvedor Full Stack" />
+  <meta property="og:description" content="Construí e opero um SaaS multi-tenant de atendimento com IA, em produção com clientes pagantes." />
+  <meta property="og:image" content="https://halisson-sales.github.io/Portif-lio/assets/hallvox-inbox.webp" />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#projetos">Pular para os projetos</a>
 
-    <header>
-        <a href="#" class="logo">HallDevs</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Principal">
+      <a class="brand" href="#topo" aria-label="Halisson Eduardo, início">
+        <img src="assets/mark.png" alt="" width="34" height="34" />
+        <span>Halisson<em>Eduardo</em></span>
+      </a>
+      <div class="nav-links">
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="#sobre">Sobre</a>
+        <a class="btn btn-sm" href="#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
 
-        <div class="nav">
-            <a href="#home">Início</a>
-            <a href="#about">Sobre</a>
-            <a href="#services">Qualificações</a>
-            <a href="#portifolio">Projetos</a>
-            <a href="#contact">Contato</a>
+  <main id="topo">
+    <!-- Hero -->
+    <section class="hero container">
+      <p class="eyebrow">Desenvolvedor Full Stack</p>
+      <h1>Construo e opero software <span class="grad">em produção</span>, de ponta a ponta.</h1>
+      <p class="lead">
+        Sou o Halisson, desenvolvedor full stack (Python/FastAPI + Next.js) e fundador da HallDevs.
+        Criei sozinho um SaaS multi-tenant de atendimento com IA que roda hoje com clientes pagantes.
+        Procuro minha primeira posição em time, trazendo essa vivência de produto.
+      </p>
+      <div class="hero-ctas">
+        <a class="btn" href="#projetos">Ver projetos</a>
+        <a class="btn btn-ghost" href="docs/CV_Halisson_Eduardo_2026.pdf" download>Baixar currículo</a>
+      </div>
+      <ul class="hero-stats" role="list">
+        <li><strong>2+ anos</strong><span>construindo software</span></li>
+        <li><strong>1 SaaS</strong><span>em produção com clientes</span></li>
+        <li><strong>Ponta a ponta</strong><span>do banco ao deploy</span></li>
+      </ul>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="container section">
+      <h2><span class="grad">Projetos</span> em produção</h2>
+      <p class="section-sub">Não são projetos de estudo: são sistemas reais, com usuários reais, que eu mantenho todos os dias.</p>
+
+      <article class="project featured">
+        <div class="project-media">
+          <img src="assets/hallvox-inbox.webp" alt="Tela da caixa de entrada omnichannel do HallVox, com conversas de WhatsApp, Instagram e Telegram numa única fila" width="1600" height="900" />
         </div>
-
-        <div class="nav-responsive">
-            <a href="#home">Início</a>
-            <a href="#about">Sobre</a>
-            <a href="#services">Qualificações</a>
-            <a href="#portifolio">Projetos</a>
-            <a href="#contact">Contato</a>
+        <div class="project-body">
+          <h3>HallVox</h3>
+          <p class="project-tagline">SaaS de atendimento omnichannel com agentes de IA</p>
+          <p>
+            Plataforma multi-tenant que unifica WhatsApp Cloud API, Instagram, Messenger, Telegram,
+            e-mail e webchat, com agentes de IA que respondem, qualificam e escalam para humanos.
+            Em produção com clientes pagantes: billing internacional (Paddle), SSO corporativo
+            (OIDC/SAML), conformidade LGPD e observabilidade completa.
+          </p>
+          <ul class="tags" role="list">
+            <li>FastAPI</li><li>PostgreSQL</li><li>Next.js</li><li>TypeScript</li><li>Docker</li><li>Meta APIs</li>
+          </ul>
+          <div class="project-links">
+            <a class="btn btn-sm" href="https://hallvox.app" target="_blank" rel="noopener">Visitar hallvox.app<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+          </div>
         </div>
+      </article>
 
-        <div class="menu-hamburguer">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+      <div class="project-grid">
+        <article class="project">
+          <div class="project-media">
+            <img src="assets/crm-dashboard.webp" alt="Dashboard analítico do CRM HallDevs com cartões de receita, taxa de conversão e gráficos de vendas" width="1600" height="1000" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <h3>CRM HallDevs</h3>
+            <p class="project-tagline">CRM white-label para leads, vendas e agentes de IA</p>
+            <p>
+              Gestão de leads, vendas e categorias com dashboard analítico. Row-level security por
+              empresa, JWT em cookies httponly e webhooks autenticados integrados a automações n8n.
+            </p>
+            <ul class="tags" role="list">
+              <li>FastAPI</li><li>Next.js</li><li>PostgreSQL</li><li>Recharts</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-media">
+            <img src="assets/hallvox-automacoes.webp" alt="Editor visual de automações do HallVox, com fluxo de nós conectados" width="1600" height="900" loading="lazy" />
+          </div>
+          <div class="project-body">
+            <h3>Automações com IA</h3>
+            <p class="project-tagline">n8n + OpenAI aplicados a operação real</p>
+            <p>
+              Dezenas de fluxos em produção para PMEs: qualificação de leads, atendimento 24h,
+              disparos em massa com opt-out e integrações entre sistemas via API e webhooks.
+            </p>
+            <ul class="tags" role="list">
+              <li>n8n</li><li>OpenAI API</li><li>Webhooks</li><li>Telegram Bot API</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section id="stack" class="container section">
+      <h2>Stack <span class="grad">principal</span></h2>
+      <div class="stack-grid">
+        <div class="stack-card">
+          <h3>Back-end</h3>
+          <p>Python, FastAPI, SQLAlchemy, Alembic, Pydantic, APIs REST, JWT, OAuth2/OIDC, SAML</p>
         </div>
+        <div class="stack-card">
+          <h3>Front-end</h3>
+          <p>Next.js, React, TypeScript, Tailwind CSS, PWA, WebSocket</p>
+        </div>
+        <div class="stack-card">
+          <h3>Dados</h3>
+          <p>PostgreSQL, MySQL, modelagem, otimização de consultas, migrations</p>
+        </div>
+        <div class="stack-card">
+          <h3>Infra e DevOps</h3>
+          <p>Docker, Linux, CI/CD (GitHub Actions), VPS, Cloudflare, Grafana, Sentry</p>
+        </div>
+        <div class="stack-card">
+          <h3>Automação e IA</h3>
+          <p>n8n, OpenAI API, WhatsApp Cloud API, Meta Graph API, Playwright</p>
+        </div>
+      </div>
+    </section>
 
-    </header>
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Olá, Me chamo Halisson Eduardo</h1>
-            <h3>Desenvolvedor <span>Full-Stack</span></h3>
-        
+    <!-- Sobre -->
+    <section id="sobre" class="container section">
+      <h2>Sobre <span class="grad">mim</span></h2>
+      <div class="sobre-cols">
         <p>
-            Sou estudante de Ciencia da computação e desenvolvedor Full Stack com conhecimentos adquiridos por meio de projetos acadêmicos e atuação
-            como freelancer, onde desenvolvi experiência em desenvolvimento web, mobile,programação e criação de software. Minhas especialidades 
-            incluem linguagens de programação como JavaScript, HTML, CSS, Python e Java.
+          Trabalhei dois anos e meio em atendimento sob meta enquanto fazia a graduação em Ciência
+          da Computação e construía meus primeiros projetos. Em 2024 fundei a HallDevs e, desde
+          então, respondo sozinho por produto, arquitetura, código, infraestrutura e operação de
+          sistemas que estão no ar todos os dias.
         </p>
-            <div class="btn-cv">
-            <a href="docs/Novo_CV_ATS Halisson_Eduardo.pdf" download="Novo_CV_ATS Halisson_Eduardo.pdf" class="btn">Download CV</a>
+        <p>
+          Isso me ensinou o que não se aprende em tutorial: decidir com pouca informação, priorizar
+          o que importa e sustentar software em produção. O que procuro agora é um time, com revisão
+          de código, arquitetura discutida em grupo e um produto grande o bastante para doer.
+        </p>
+      </div>
+    </section>
 
-            <div class="social-midia">
-                <a href="https://www.linkedin.com/in/halisson-sales/"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Halisson-Sales"><i class='bx bxl-github' ></i></a>
-            </div>
-        </div>
+    <!-- Contato -->
+    <section id="contato" class="container section contato">
+      <h2>Vamos <span class="grad">conversar?</span></h2>
+      <p class="section-sub">Aberto a oportunidades como desenvolvedor full stack ou back-end, remoto ou em São Luís, MA.</p>
+      <div class="contact-links">
+        <a class="btn" href="mailto:halissonsales@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          halissonsales@gmail.com
+        </a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/halisson-sales/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v2a6 6 0 0 1 2-2z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/Halisson-Sales" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          GitHub
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Halisson Eduardo Barbosa Sales. Feito à mão com HTML e CSS, sem framework.</p>
     </div>
-        
-
-        <div class="home-img">
-
-            <div class="img-box">
-                <div class="img-item">
-
-                    <img src="images/NewPerfil3.png" alt="Sobre mim">
-        
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
-<dotlottie-player src="https://lottie.host/5979e2c1-91c1-4748-9f8e-9837e464e8e6/cWzQVTrnCI.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
-        </div>
-
-        <div class="about-content">
-
-            <h3>Sobre mim</h3>
-            <h1>Desenvolvedor <span>Full-Stack</span> </h1>
-
-                <p>
-                    Oi, tudo bem? me chamo Halisson Eduardo e tenho 22 anos.
-                    
-                </p>
-
-                <p>
-                    Sou estudante de Ciência da Computação da Faculdade Anhanguera São Luís de Maranhão - Turu e também
-                     participei de cursos complementares como treinamento Python essencial, especialização em automações 
-                     Python e formação em banco de dados SQL que me ajudaram bastante a adquirir mais conhecimento e que 
-                     inclusive me fizeram ficar cada vez mais apaixonado pela área de TI. 
-                    
-                </p>
-
-                <p>
-                    Como estudante e freelancer, desenvolvi sites e aplicações utilizando tecnologias como HTML, CSS, JavaScript,
-                     Java e Python. Trabalhei em projetos variados, desde telas de acessos e menus de navegação até sistemas de 
-                     gerenciamento de dados, sempre focando na criação de interfaces intuitivas e na integração eficiente com APIs
-                    e bancos de dados. Além disso, tenho experiência na criação de automações utilizando Python com foco em otimizar
-                    processos e aumentar a produtividade em diferentes tipos de atividades.
-                </p>
-
-                <h3> 
-                    O primeiro passo é sempre o mais difícil, e seguir em frente mantendo a consistência, apesar das dificuldades,
-                     é o que garante a recompensa por todo o trabalho duro.
-                </H3>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2>Minhas <span>Qualificações</span></h2>
-
-        <div class="services-container">
-            <div class="services-box">
-                <div class="services-icon">
-                    <i class='bx bxl-dev-to'></i>
-                </div>
-                <h3>Desenvolvimento Full-Stack</h3>
-
-                <p>
-                    Sou desenvolvedor Full Stack com experiência em criar soluções completas, atuando
-                    tanto no front-end quanto no back-end. Utilizo HTML, CSS e JavaScript para desenvolver
-                    interfaces responsivas e dinâmicas, enquanto no back-end aplico Java e SQL para criar
-                    APIs e gerenciar bancos de dados. Também tenho experiência com Firebase para 
-                    funcionalidades como autenticação e armazenamento em nuvem. Trabalho com ferramentas como
-                    Visual Studio para otimizar o desenvolvimento de projetos, desde a concepção até a entrega
-                    final. Minha atuação como freelancer e em projetos acadêmicos me permitiu consolidar essas habilidades.
-
-                </p>
-                <a href="#" class="btn-ql">Ler mais</a>
-            </div>
-
-            <div class="services-box">
-                <div class="services-icon">
-                    <i class='bx bxs-window-alt'></i>
-                </div>
-
-                <h3>Desenvolvimento Web</h3>
-
-                <p>
-                    No desenvolvimento web, tenho experiência na criação de sites e aplicações web modernas
-                    e responsivas. Utilizo HTML e CSS para estruturar e estilizar páginas, e JavaScript para
-                    adicionar interatividade e funcionalidades avançadas. Além disso, aplico Firebase para
-                    integração com back-end, como autenticação de usuários e armazenamento de dados. Trabalho
-                    com Visual Studio para garantir um fluxo de trabalho eficiente e código de qualidade. 
-                    Meu foco é entregar soluções que combinem design atraente, usabilidade e performance,
-                    baseado em projetos acadêmicos e freelancer.
-
-
-                </p>
-                <a href="#" class="btn-ql">Ler mais</a>
-            </div>
-
-            <div class="services-box">
-                <div class="services-icon">
-                    <i class='bx bx-mobile-alt'></i>
-                </div>
-                <h3>Desenvolvimento Mobile</h3>
-
-                <p>
-                    No desenvolvimento mobile, atuo na criação de aplicativos Android utilizando Android Studio
-                     e Java para a lógica de negócios. Também integro Firebase para funcionalidades como banco
-                    de dados em tempo real, autenticação e notificações. Meus projetos acadêmicos e freelancer
-                    me permitiram desenvolver aplicativos intuitivos e funcionais, priorizando a experiência
-                    do usuário e a eficiência. Busco sempre aplicar as melhores práticas de design e
-                     desenvolvimento para entregar soluções mobile de qualidade.
-
-                    
-                </p>
-                <a href="#" class="btn-ql">Ler mais</a>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="portifolio" id="portifolio">
-        <h2>Meus <span>projetos</span></h2>
-        
-            <div class="portifolio-container">
-                <div class="portifolio-box">
-                    <img src="images/App1 re.png">
-                    <div class="portifolio-layer">
-                        <h3>Menu e tela de acesso para aplicativo de Lanchonete</h3>
-                        <p>
-                            O sistema oferece uma interface de fácil usabilidade, com uma tela de acesso para cadastro e login,
-                            permitindo que os clientes criem e acessem suas contas com informações básicas. Além disso, conta
-                            com uma toolbar customizada e um menu flutuante intuitivo, que facilita o acesso rápido a funções
-                            como cardápio, pedidos e perfil, proporcionando uma experiência prática e eficiente.
-                        </p>
-
-                        <p>
-                            Tecnologias: Android Studio, Java, Firebase.
-                        </p>
-
-                        <a href="https://github.com/Halisson-Sales/ProjetoBig"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-        
-                <div class="portifolio-box">
-                    <img src="images/Certificado auto full.png">
-                    <div class="portifolio-layer">
-                        <h3>Gerador Automático de Certificados</h3>
-                        <p>
-                            A automação utiliza uma planilha de dados como base, preenchendo automaticamente informações como nome
-                            do aluno, curso, instituição e datas no layout do certificado. Com suporte para personalização de fontes
-                            e design, o projeto garante rapidez e precisão na geração de certificados, tornando o processo simples
-                            e acessível para instituições de ensino, organizadores de eventos e empresas.
-                        </p>
-
-                        <p>
-                            Tecnologias: Vscode, Python(openpyxl e pillow).
-                        </p>
-
-                        <a href="https://github.com/Halisson-Sales/AutoCertificado"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-        
-                <div class="portifolio-box">
-                    <img src="images/Breve.png">
-                    <div class="portifolio-layer">
-                        <h3>Desenvolvimento Full-Stack</h3>
-                        <p>
-                            Estou trabalhando em novos projetos e, em breve, lançarei todos aqui! Fiquem de olho! 🚀
-                        </p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-        
-                <div class="portifolio-box">
-                    <img src="images/Breve.png">
-                    <div class="portifolio-layer">
-                        <h3>Desenvolvimento Full-Stack</h3>
-                        <p>
-                            Estou trabalhando em novos projetos e, em breve, lançarei todos aqui! Fiquem de olho! 🚀
-                        </p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-
-    </section>
-
-    <section class="contact" id="contact">
-        <h2>Meu <span>contato</span></h2>
-
-        <form action="https://formsubmit.co/halldeveloperhall@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="Novo contato do portfólio!">
-            <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_autoresponse" value="Obrigado por entrar em contato! Responderei em breve.">
-        
-            <div class="input-box">
-                <input type="text" name="nome" placeholder="Nome completo" required/>
-                <input type="email" name="email" placeholder="E-mail" required>
-            </div>
-        
-            <div class="input-box">
-                <input type="number" name="telefone" placeholder="Número de contato" required>
-                <input type="text" name="assunto" placeholder="Assunto" required>
-            </div>
-        
-            <textarea name="mensagem" cols="30" rows="8" placeholder="Escreva sua Mensagem"></textarea>
-        
-            <button type="submit" class="btn">Enviar Mensagem</button>
-        </form>
-
-    </section>
-
-
-    <footer>
-
-        <p>Copyright &copy; 2026 by HallDevs. All Rights Reserved.</p>
-
-    </footer>
-
-
+  </footer>
 </body>
-<script src="js/script.js">
-    
-
-</script>
-
 </html>
-
-
-
